@@ -4,28 +4,41 @@ body{
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
+    background-color: black;
+    overflow: hidden;
+/* le overflow hidden a été rajouté par mois car j'ai pas trouvé comment elenver les barres de scroll auto */
 }
 
+/* le CSS pour les barres de SCROLL ne marche pas */
+::-webkit-scrollbar { 
+    /* Quand la barre de scroll ne bouge pas */
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+    /* quand la barre de scroll bouge */
+    background-color: black;
+    border-radius: 20px;
+}
 .container{
     display: flex;
     flex-direction: column;
     height: 100vh;
     padding: 25px;
+    text-overflow: hidden;
+    border: 1px solid blue;
 }
 
 .header{
     flex: 1;
-    background-color: red;
 }
 
 .tv_show_header{
     flex: 2;
-    background-color: blue;
 
 }
 
 .recommendations{
     flex: 1;
-    background-color: green;
 
 }

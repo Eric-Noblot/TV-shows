@@ -1,0 +1,26 @@
+.item_container{
+    cursor: pointer;
+    width: 300px;
+    position: relative;
+    /* Pour que .list dans TVShowList.css ne puisse pas continuer en dehors du conntainer, on passe en RELATIVE*/
+}
+
+.item_title{
+    position: absolute;
+    margin-top:-40px;
+    height: 40px;
+    width: 300px;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-right: 20px;
+    background-color: rgba(0,0,0,0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-overflow: ellipsis; /* si le texte sort du cadre on met 3 petits points */
+    overflow: hidden;
+    white-space: no-wrap; /* text ellipsis marche bien   si 1 mot est trop long il y a les ..., mais lorsqu'il y a plusieurs mots cela ne fonctionne plus, en rajoutant white-space ca fonctionne à nouveau */
+
+}
+.item_img{
+    border-radius: 10px;
+}

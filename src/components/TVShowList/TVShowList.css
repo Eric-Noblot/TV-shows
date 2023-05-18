@@ -1,0 +1,19 @@
+.title_list{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.list {
+    display: flex;
+    width: 100vw;
+    overflow-x: hidden; 
+    padding-bottom: 20px;
+    /* on enleve le scroll horizontal par défaut */
+}
+.list:hover {
+    overflow-x: overlay;
+}
+
+.tv_show_list_item{
+    margin-right: 20px; 
+}

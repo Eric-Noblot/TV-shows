@@ -1,0 +1,27 @@
+.title{
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.rating_container{
+    display: flex;
+}
+.vote {
+    margin-top: 3px;
+    margin-left: 7px;
+}
+
+
+.overview{
+    font-weight: 400;
+    font-size: 20px;
+    height: 120px;
+    /* on donner une hauteur pour forcer le texte à scroller en mode mobile (ou en tt cas quand on réduit la fenêtre) */
+    overflow-y: hidden;
+    /* on cache la barre de scrool vertical */
+    margin-top: 10px;
+}
+.overview:hover{
+    overflow-y: auto;
+    /* on affiche la scroll bar au moment du hover */
+}
